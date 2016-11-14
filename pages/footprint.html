@@ -1,0 +1,26 @@
+<div id="baidumap" style="height: 600px; overflow: hidden;margin-bottom:20px;">
+</div>
+
+<div class="row row-nomargin">
+	<div class="col-sm-8 col-xs-12 col-md-8 col-minpadding">
+	<div class="roundregion" style="height: 500px;" > 
+		<div class="camera_wrap camera_azure_skin" id="footprintcamera" camslider  style="margin-top:20px;">
+			<div ng-repeat="img in imagesource" data-thumb="{{img.datathumb}}" data-src="{{img.datasrc}}">
+				<div class="camera_caption fadefrombottom">
+					see how cool the family is!
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	<div class="col-sm-4 col-xs-6 col-md-4 col-nopadding">
+		<div class="roundregion" style="height: 500px;"> 
+			<div class="content-mediumpadding">
+				<h3 class="h3-padding" style="margin-top: 0px">{{activePlace.location}}</h3>
+				<hr class="hr-margin"/>
+				<div ng-bind-html="activePlace.description">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,99 @@
+
+<div class="row" style="position:relative; margin: 0 auto;">
+	<img src="../images/topbanner.jpg" style="width: 1200px;"></img>
+</div> 
+<div class="row row-nomargin">
+	<div class="col-sm-8 col-xs-12 col-md-8 col-minpadding" >
+		<div class="roundregion" style="height: 600px; " > 
+			<div class="content-mediumpadding">
+				<h3 class="h3-padding">Welcome</h3>
+				<hr class="hr-margin" />
+				<p>
+					Welcome to Zhigao's family home page!
+				</p>
+				<p>
+					We are the small family with three members: the father, the mother and the cutest son int the world. This site records some of the important moments of the family - something we'd like to share and expect you to enjoy. 
+				</p>
+
+				<p>
+					Hope from this site, you can get to know us, and feel our life. We're ordinary, just like millions of Chinease families, yet we are also unique, as the only Zhigao's family in the world.
+				</p>
+				<p>
+					PS. This site achieved two of Zhigao's objectives of year 2015: 1) create a family site; 2) practice one technology learned this year - guess what technology it is:-). 
+				</p>
+			</div>	
+
+			<div class="content-mediumpadding">
+				<h3 class="h3-padding">What's in the site?</h3>
+				<hr class="hr-margin" />
+				<p>
+					You'll find different things in different pages, and we expect you're interested in some of them.
+				</p>
+				<p>
+					The <a href="#">Home</a> page is what you're viewing now. Let's call it the entry of the site. 				
+				</p>
+				<p>
+					The <a href="#/stories">Story</a> page shows our stories along the timeline. Only the important moments and family milestones are shown in the page, though there are so many to be remembered. 				
+				</p>
+				<p>
+					The <a href="#/footprint">Footprint</a> page traces our footprints around the world, either as a family or as an indiviual. Travelling is something the famliy would like to do. We're trying our best to have at least one trip every year.  
+				</p>
+
+				<p>
+					The <a href="#/familytree">Family Tree</a> page tells you how and where the family come from. Both the grandpas and grandmas are pesents, and worked hard for their whole life, even today. We are proud of them, and proud of being their children.
+				</p>
+			</div>	
+
+		</div>
+	</div>
+	<div class="col-sm-4 col-xs-6 col-md-4 col-nopadding" >
+		<div class="roundregion" style="height: 295px; margin-bottom:-10px" > 
+			<div class="content-mediumpadding">
+				<h3 class="h3-padding">Coming event</h3>
+				<hr class="hr-margin" />
+				<p>
+					Tour to Changbai Moutain! We've kept talking about it for years, and finally have the tickets booked.
+				</p>
+
+				<img src="./images/event.jpg" style="display: block;width: 360px; height: 170px; margin: 0 auto">
+				
+			</div>
+		</div>
+		<div class="roundregion" style="height: 185px;">  
+			<div class="content-mediumpadding">
+				<h3 class="h3-padding">Recent thoughts</h3>
+				<hr class="hr-margin" />
+				<p>
+					The tougher the work is, the quicker the growth will be.
+				</p>
+			</div>
+		</div>
+		<div class="roundregion" style="height: 100px;">  
+			<div class="content-mediumpadding">
+				<div class="row row-nomargin" style="margin-top:10px">
+					<div class="col-sm-8 col-xs-12 col-md-8 col-minpadding" >
+						<p style="padding-top: 5px; font-size: 180%">{{weather.city}}</p>
+						<hr class="hr-margin" />
+						<p style="margin-top: -15px; font-size: 110%" >{{weather.weather}}, {{weather.degree}}°C<br>
+						Wind speed: {{weather.windspeed}}m/s</p>
+					</div>	
+					<div class="col-sm-4 col-xs-6 col-md-4">
+						<img src="{{weather.icon}}" style="width:100px;" />
+					</div>	
+				</div>
+
+			</div>
+		</div>		
+	</div>
+</div>
+
+<div class="roundregion" style="height: 700px; margin-top: 10px" > 
+	<div class="camera_wrap camera_azure_skin" id="camera_wrap_1" camslider style="padding-top: 20px;">
+		<div ng-repeat="img in imagesource" data-thumb="{{img.datathumb}}" data-src="{{img.datasrc}}">
+			<div class="camera_caption fadefrombottom">
+				see how cool the family is!
+			</div>
+		</div>
+	</div>
+</div>	
+
