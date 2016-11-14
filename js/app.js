@@ -131,8 +131,10 @@ app.controller('footprintCtrl', function($scope) {
 			//		{x: 116.0, y:  41.58}, //bashang 
 			//		{x:114.16 , y:22.3 }, //hongkong
 			// 	];
+			var myIcon = new BMap.Icon("./images/marker.png", new BMap.Size(19,25));
+			
 			for (var i = $scope.placevisited.length - 1; i >= 0; i--) {
-				var marker = new BMap.Marker(new BMap.Point($scope.placevisited[i].coords.x, $scope.placevisited[i].coords.y));
+				var marker = new BMap.Marker(new BMap.Point($scope.placevisited[i].coords.x, $scope.placevisited[i].coords.y), {icon:myIcon});
 				marker.location = $scope.placevisited[i].location;
 				marker.addEventListener("click", $scope.markerclicked);
 				map.addOverlay(marker);              
